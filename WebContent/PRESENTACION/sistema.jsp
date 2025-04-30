@@ -7,5 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
+ <%
+   String sn1=request.getParameter("n1");
+   String sn2=request.getParameter("n2");
+   
+   double n1=Double.parseDouble(sn1);
+   double n2=Double.parseDouble(sn2);
+   double resultado=0;
+   
+   if(operador.equals("+")){
+	   resultado=n1+n2;
+   }else if(operator.equals("-"))
+	   resultado=n1-n2;
+ %>
+ <h1>Resultado: <%=resultado %></h1>
+ <a href="index.html">Volver</a>
 </body>
 </html>
