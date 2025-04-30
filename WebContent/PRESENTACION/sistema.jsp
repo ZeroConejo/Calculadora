@@ -7,7 +7,6 @@
 <title>Resultado</title>
 </head>
 <body>
-<<<<<<< HEAD
 	<%
 		String sn1=request.getParameter("n1");
 		String sn2=request.getParameter("n2");
