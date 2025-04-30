@@ -7,6 +7,7 @@
 <title>Resultado</title>
 </head>
 <body>
+<<<<<<< HEAD
 	<%
 		String sn1=request.getParameter("n1");
 		String sn2=request.getParameter("n2");
@@ -17,9 +18,9 @@
 		double resultado=0;
 		
 		if (operador.equals("+")){
-			
+			resultado=n1+n2;
 		} else if (operador.equals("-")){
-			
+			resultado=n1-n2;
 		} else if (operador.equals("*")) {
 			resultado =n1*n2;
 		} else if (operador.equals("/")){
