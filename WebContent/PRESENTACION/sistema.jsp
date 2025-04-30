@@ -4,8 +4,30 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Resultado</title>
 </head>
 <body>
+	<%
+		String sn1=request.getParameter("n1");
+		String sn2=request.getParameter("n2");
+		String operador=request.getParameter("operador");
+				
+		double n1= Double.parseDouble(sn1);
+		double n2= Double.parseDouble(sn2);
+		double resultado=0;
+		
+		if (operador.equals("+")){
+			
+		} else if (operador.equals("-")){
+			
+		} else if (operador.equals("*")) {
+			resultado =n1*n2;
+		} else if (operador.equals("/")){
+			resultado = n1/n2;
+		}
+		
+	%>
+	<h1>Resultado: <%=resultado %></h1>
+	<a href="index.html">Volver</a>
 </body>
 </html>
